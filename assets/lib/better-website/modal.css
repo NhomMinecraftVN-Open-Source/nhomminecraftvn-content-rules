@@ -1,0 +1,31 @@
+.modal {display: grid; place-items: center;}
+.modal__button {display: inline-block; background-color: var(--first-color); color: #fff; padding: .75rem 1.25rem; border-radius: .5rem; transition: 300ms; width: 90%;}
+.modal__button-link:hover {background-color: var(--first-color-light);}
+.modal__button-link:active {background-color: var(--accent-first-color);}
+.modal__container {position: absolute; top: 0; left: 0; background-color: var(--modal-overlay); backdrop-filter: blur(5px); width: 100%; height: 100%; display: grid; align-items: flex-end; overflow: hidden; transition: all 300ms; z-index: var(--z-modal); visibility: hidden; opacity: 0;}
+.modal__content {position: relative; background-color: var(--container-color); text-align: center; padding: 1.5rem 2rem 2rem; border-radius: 1rem 1rem 0 0; transition: all 200ms;
+/*default effect*/ transform: translateY(10%);}
+.modal__close {display: inline-flex; border-radius: .25rem; color: black; font-size: 1.5rem; position: absolute; top: 1rem; right: 1rem; cursor: pointer;}
+.modal__title {margin-bottom: 1rem; font-size: var(--h3-font-size); color: var(--title-color); font-weight: 500; text-align: left;}
+.modal__description {margin-bottom: 1.5rem;}
+.modal__button-width {width: 90%; margin: .5rem auto 0; background-color: #f7f7f7; color: black}
+.modal__button-width:hover {background-color: #f3f3f3;}
+.modal__button-width:active {background-color: #f0f0f0;}
+.dark-theme .modal__button-width {background-color: hsl(228,16%,20%); color: #fff;}
+.dark-theme .modal__button-width:hover {background-color: hsl(228,16%,30%); color: #fff;}
+.dark-theme .modal__button-width:active {background-color: hsl(228,16%,15%); color: #fff}
+.modal__button-link {display: block; margin: .5rem auto 0; background-color: var(--first-color); color: #fff; font-weight: 500;}
+.show-modal {visibility: visible; opacity: 1;}
+.show-modal .modal__content {transform: translateY(0);}
+
+@media screen and (min-width: 576px) {
+  .modal__content {margin: auto; width: 360px; border-radius: 1rem 1rem 1rem 1rem; transform: none;}
+}
+
+@media screen and (min-width: 640px) {
+	.modal__content {width: 480px}
+}
+
+@media screen and (min-width: 768px) {
+	.modal__content {width: 640px}
+}

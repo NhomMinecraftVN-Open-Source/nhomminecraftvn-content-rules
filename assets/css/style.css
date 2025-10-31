@@ -1,0 +1,40 @@
+@import url("../lib/better-website/style.css");
+@import url("../vendor/ri/remixicon.css");
+
+.home__container {
+  padding-top: 2rem;
+  row-gap: 2.5rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+.stats__container {
+  row-gap: 3rem;
+}
+
+.stats__card {
+  text-align: center;
+}
+
+.stats__card i {
+  display: block;
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.stats__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: .5rem;
+}

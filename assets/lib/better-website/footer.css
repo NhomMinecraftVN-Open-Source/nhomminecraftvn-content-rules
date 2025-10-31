@@ -1,0 +1,4 @@
+.footer {width: 100%; background-color: #fdfdfd; text-align: center; padding: 1.75rem 0}
+.footer h4 {margin-bottom: 3.5px; font-weight: var(--font-semi-bold);}
+.footer i.NhomMinecraftVNWebsiteTemplate {color: red;}
+.dark-theme .footer {background-color: hsl(228,16%,10%);}

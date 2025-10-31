@@ -1,0 +1,101 @@
+@import url('./header.css');
+@import url('./sidebar.css');
+@import url('./footer.css');
+@import url('./breakpoint.css');
+@import url('./login.css');
+@import url('./modal.css');
+@import url('./color.css');
+
+/*#region variable definition */
+:root {
+   --header-height: 3.5rem;
+
+   /*=== font and typography ===*/
+   --body-font: system-ui, sans-serif;
+   --second-font: 'inter', system-ui, sans-serif;
+   --monospace-font: 'Menlo', 'consolas', monospace;
+   --biggest-font-size: 2.25rem;
+   --h1-font-size: 1.5rem;
+   --h2-font-size: 1.25rem;
+   --h3-font-size: 1rem;
+   --normal-font-size: .938rem;
+   --small-font-size: .813rem;
+   --smaller-font-size: .75rem;
+
+   /*=== font weight ===*/
+   --font-extra-light: 300;
+   --font-regular: 400;
+   --font-medium: 500;
+   --font-semi-bold: 600;
+   --font-bold: 700;
+
+   /*=== z-index variable ===*/
+   --z-tooltip: 10;
+   --z-fixed: 100;
+   --z-modal: 1000;
+}
+
+/*=== dark theme ===*/
+body.dark-theme {
+   --first-color: #015ace; 
+   --first-color-lighten: #191b1f;
+   --sp-first-color-lighten: #303336;
+   --accent-first-color: #0364e3; 
+   --navbar-color: #000000;
+   --second-color: #6401a5; 
+   --shadow-color: var(--text-color-light);
+   --title-color: #dfdfdf; 
+   --text-color: hsl(0, 0%, 100%); 
+   --text-color-light: hsl(0, 0%, 40%);
+   --border-color: var(--container-color); 
+   --body-color: hsl(0, 0%, 0%);
+   --container-color: hsl(228,16%,12%);
+}
+
+/*=== responsive typography ===*/
+@media screen and (min-width: 1150px) {
+  :root {
+   --biggest-font-size: 4rem;
+   --h1-font-size: 2.25rem;
+   --h2-font-size: 1.5rem;
+   --h3-font-size: 1.25rem;
+   --normal-font-size: 1rem;
+   --small-font-size: .875rem;
+   --smaller-font-size: .813rem;
+  }
+}
+/*#endregion variable definition */
+
+/*=== base ===*/
+* {margin: 0; padding: 0; box-sizing: border-box; /*user-select: none*/; -webkit-user-drag: none;}
+::-webkit-scrollbar {display: none;}
+html {scroll-behavior: smooth;}
+body {font-family: var(--body-font); font-size: var(--normal-font-size); background-color: var(--body-color); color: var(--text-color);}
+h1,h2,h3,h4,h5,h6 {font-family: var(--second-font); color: var(--title-color); font-weight: var(--font-semi-bold);}
+ul {list-style: none;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+input,button {font-family: var(--body-font); all: unset;}
+code { font-family: var(--monospace-font); }
+pre { font-family: var(--monospace-font); }
+hr { margin-top: .5rem; margin-bottom: .5rem; }
+
+/*=== layout ===*/
+.container {max-width: 1220px; margin-inline: 1.5rem;}
+.main {margin-top: 3.5rem;}
+.grid {display: grid;}
+.code__box {background: var(--container-color); padding: 1rem; margin: 1.5rem; border-radius: .5rem; word-wrap: break-word;}
+.section {padding: 4.5rem 0 2rem;}
+.section__title {font-size: var(--h2-font-size); margin-bottom: 1rem;}
+.section__title span {color: var(--text-color-light)}
+.section__subtitle {display: block; font-size: var(--small-font-size); color: var(--text-color-light);}
+ul.accesslist, ol.accesslist { margin: 1rem; }
+li.accessdot { list-style: inside; }
+blockquote {position: relative; left: 0; height: 100%; z-index: -2;}
+blockquote p { margin: 1rem; }
+blockquote::before { content: ""; position: absolute; width: 3px; height: 100%; background-color: var(--text-color-light); z-index: -1; }
+
+/*=== button ===*/
+.button {display: inline-block; background-color: var(--first-color); color: #fff; padding: 10px 24px; margin-bottom: .5rem; border-radius: .5rem; font-size: var(--normal-font-size); font-weight: var(--font-medium); transition: 300ms; cursor: pointer;}
+.button:hover {background-color: var(--accent-first-color);}
+.nav__button {display: block; margin-left: -15%;}

@@ -1,0 +1,22 @@
+:root {
+	--first-color: #015ace;
+	--accent-first-color: #0155c2;
+	--first-color-light: #368dff;
+	--first-color-lighten: #f0f5fb;
+	--sp-first-color-lighten: #f6faff;
+	--shadow-color: var(--text-color-light);
+	--navbar-color: hsla(0, 0%, 100%, 1);
+	--title-color: hsl(0,0%,0%);
+	--text-color: hsl(0, 0%, 0%);
+	--text-color-light: hsl(228, 12%, 75%);
+	--border-color: #f2f5fa;
+	--body-color: #ffffff;
+	--container-color: #f9f9f9;
+	--border-color: hsl(230, 25%, 80%);
+	--modal-overlay: hsla(230, 75%, 15%, .1);
+	--modal-shadow: hsla(230, 75%, 15%, .2);
+
+	/*=== defined colors ===*/
+	--purple: #7c01ce;
+	--green: rgb(38,222,12);
+}
