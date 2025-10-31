@@ -6,4 +6,4 @@ This content rules for NhomMinecraftVN Community
 * Process Violation Rule (not yet released)
 * Safety for Children/Teen Rule
 
-**Warning:** This content rules only in Vietnamese language.
+**Warning:** This content rules written in Vietnamese language.
