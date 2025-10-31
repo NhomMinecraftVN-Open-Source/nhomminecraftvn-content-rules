@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" id="NhomMinecraftVNWebsite">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.css">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="header__container">
+			<button class="header__toggle" id="header-toggle">
+				<i class="ri-menu-line"></i>
+			</button>
+			<!-- <a hrer="#" class="header__logo">
+				<i class="ri-image-line"></i>
+				<span id="nav-logo"></span>
+			</a> -->
+			<a hrer="#" class="header__logo">
+				<img src="./public/img/logo/new_logo.png" alt="NhomMinecraftVN">		
+			</a>
+
+			<div class="header__actions">
+				<!-- <i class="ri-user-line user-btn" id=""></i> -->
+      	<i class="ri-moon-line change-theme" id="theme-button"></i>
+      </div>
+		</div>
+	</header>
+
+	<nav class="sidebar hide-sidebar" id="sidebar">
+		<div class="sidebar__container">
+			<div class="sidebar__content">
+				<div class="sidebar__list">
+					<div>
+						<h3 class="sidebar__title">Main</h3>
+						<div class="sidebar__list">
+							<a href="#" class="sidebar__link" data-link><i class="ri-home-2-line"></i><span>Home</span></a>
+					</div>
+					<div>
+						<h3 class="sidebar__title">Contents</h3>
+						<div class="sidebar__list">
+							<a href="#contents?value=CommunityGroupsRule" class="sidebar__link" data-link><i class="ri-book-2-line"></i><span>Community/Groups</span></a>
+							<a href="#contents?value=ProcessViolationRule" class="sidebar__link" data-link><i class="ri-book-2-line"></i><span>Process Violation</span></a>
+							<a href="#contents?value=SafetyForChildrenTeenRule" class="sidebar__link" data-link><i class="ri-book-2-line"></i><span>Safety for Children/Teen</span></a>
+					</div>
+					<div>
+						<h3 class="sidebar__title"></h3><br>
+						<a href="#options" class="sidebar__link" data-link><i class="ri-settings-4-line"></i><span>Options</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main class="main" id="main">
+		<!-- do not edit this main section -->
+	</main>
+
+	<div class="modal container">
+		<div class="modal__container" id="modal-container">
+			<div class="modal__content" id="modal-content-root">
+			</div>
+		</div>
+	</div>
+
+	<!-- <footer class="footer">
+		<p>&#169; <span id="footer-year"></span></p>
+		<p>Design using <i class="ri-heart-line NhomMinecraftVNWebsiteTemplate"></i> NhomMinecraftVN Website Template</p>
+	</footer> -->
+</body>
+
+
+<script src="./index.js" type="module"></script>
+<script src="./Router.js" type="module"></script>
+</html>
